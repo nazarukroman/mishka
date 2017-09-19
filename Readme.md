@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Роман Назарук](https://up.htmlacademy.ru/adaptive/12/user/143345).
-* Наставник: `Неизвестно`.
+* Наставник: `Владислав Балабанович`.
 
 ---
 
