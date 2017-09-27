@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Логотип" width="86" height="35">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <form class="site-list__search-form" action="index.html" method="post">
+              <label class="visibility-hidden" for="search-form">Поиск</label>
+              <input type="text" name="search" id="search-form" placeholder="Поиск по сайту">
+            </form>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Вязание на заказ</h1>
+      <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="page-main__form order-form" action="index.html" method="post">
+        <fieldset class="order-form__item">
+          <legend class="order-form__title">Тип</legend>
+          <div class="order-form__option">
+            <input type="radio" name="type" id="accessories-field" checked>
+            <label for="accessories-field">Аксессуар для интерьера</label>
+          </div>
+          <div class="order-form__option">
+            <input type="radio" name="type" id="toy-field">
+            <label for="toy-field">Детская игрушка</label>
+          </div>
+        </fieldset>
+        <fieldset class="order-form__item">
+          <legend class="order-form__title">Цвет</legend>
+          <div class="order-form__option">
+            <input type="checkbox" name="white" id="white-field" checked>
+            <label for="white-field">Белый</label>
+          </div>
+          <div class="order-form__option">
+            <input type="checkbox" name="grey" id="grey-field" checked>
+            <label for="grey-field">Серый</label>
+          </div>
+          <div class="order-form__option">
+            <input type="checkbox" name="tiffani" id="tiffani-field">
+            <label for="tiffani-field">«Тиффани»</label>
+          </div>
+          <div class="order-form__option">
+            <input type="checkbox" name="black" id="black-field">
+            <label for="black-field">Черный</label>
+          </div>
+          <div class="order-form__option">
+            <input type="checkbox" name="pink" id="pink-field">
+            <label for="pink-field">Розовый</label>
+          </div>
+          <div class="order-form__option">
+            <input type="checkbox" name="orange" id="orange-field">
+            <label for="orange-field">Оранжевый</label>
+          </div>
+        </fieldset>
+        <fieldset class="order-form__item">
+          <legend class="order-form__title">ФИО</legend>
+          <div class="order-form__option">
+            <label for="name-field">Имя:</label>
+            <input type="text" name="name" id="name-field" placeholder="Введите ваше имя*">
+          </div>
+          <div class="order-form__option">
+            <label for="surname-field">Фамилия:</label>
+            <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*">
+          </div>
+          <div class="order-form__option">
+            <label for="patronymic-field">Отчество:</label>
+            <input type="text" name="patronymic" id="patronymic-field" placeholder="Отчество, если желаете">
+          </div>
+        </fieldset>
+        <fieldset class="order-form__item">
+          <legend class="order-form__title">Тел</legend>
+          <div class="order-form__option">
+            <input type="text" name="phone" id="phone-field" placeholder="+7 ХХХ ХХ ХХ*">
+          </div>
+        </fieldset>
+        <fieldset class="order-form__item">
+          <legend class="order-form__title">E-mail</legend>
+          <div class="order-form__option">
+            <input type="text" name="email" id="email-field" placeholder="Ваш Email*">
+          </div>
+        </fieldset>
+        <fieldset class="order-form__item">
+          <legend class="order-form__title">Доп</legend>
+          <div class="order-form__option">
+            <textarea name="information" id="information-field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+        </fieldset>
+        <p class="order-form__option">*Поля обязательны для заполнения</p>
+        <input class="order-form__order button" type="submit" name="order-form-button" value="Отправить заказ">
+      </form>
+    </main>
+    <footer class="page-footer">
+      <section class="social">
+        <h2 class="social__title">Давайте дружить!</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </section>
+      <div class="copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
