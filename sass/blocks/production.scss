@@ -1,0 +1,46 @@
+.production {
+  outline: 1px solid red;
+
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+
+.production__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+
+  padding-left: 30px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.production__video {
+  display: flex;
+
+  margin-bottom: 30px;
+}
+
+.production__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.production__order {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #444444;
+
+  text-transform: uppercase;
+  text-decoration: none;
+}

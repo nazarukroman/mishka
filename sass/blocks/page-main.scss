@@ -1,0 +1,33 @@
+.page-main {
+  outline: 1px solid red;
+}
+
+.page-main__title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 320px;
+  height: 260px;
+
+  background-color: #f1f1f1;
+
+  margin-bottom: 30px;
+
+  outline: 1px solid blue;
+}
+
+.page-main__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+
+  margin: 0;
+}
+
+.page-main__description {
+  margin-bottom: 25px;
+}
