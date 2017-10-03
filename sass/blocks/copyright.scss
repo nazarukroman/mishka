@@ -1,0 +1,22 @@
+.copyright {
+  outline: 1px solid red;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+
+  margin-right: 30px;
+}
+
+.copyright__link {
+  display: flex;
+}
