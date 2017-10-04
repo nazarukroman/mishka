@@ -1,15 +1,20 @@
 .site-list {
+  width: 100%;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 
-  list-style: none;
-
-  padding: 0;
-  margin: 0;
+  @include list-style;
 }
 
 .site-list__item {
-  margin-right: 10px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 1px solid #ececec;
 
   &:last-child {
     margin-right: 0;
@@ -17,9 +22,38 @@
 }
 
 .site-list__item-link {
+  width: 100%;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  text-align: center;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.site-list__item--padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    flex-direction: row-reverse;
+  }
+
+  .site-list__item {
+    border-bottom: none;
+  }
+
+  .site-list__item-link--order {
+    order: 2;
+  }
+
+  .site-list__item-link--order1 {
+    order: 1;
+  }
 }

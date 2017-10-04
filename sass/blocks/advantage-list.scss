@@ -2,8 +2,19 @@
   display: flex;
   flex-direction: column;
 
-  list-style: none;
+  @include list-style;
+}
 
-  padding: 0;
-  margin: 0;
+.advantage-list__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+
+  padding-top: 60px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

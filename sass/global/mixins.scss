@@ -1,0 +1,11 @@
+@mixin list-style {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+@mixin mobile-padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}

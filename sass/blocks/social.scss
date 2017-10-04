@@ -1,8 +1,8 @@
 .social {
-  outline: 1px solid blue;
-
   padding-top: 25px;
   padding-bottom: 25px;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social__list {
@@ -13,12 +13,7 @@
 
   width: 260px;
 
-  list-style: none;
-
-  border-bottom: 1px solid #e5e5e5;
-
-  padding: 0;
-  margin: 0;
+  @include list-style;
 }
 
 .social__item {

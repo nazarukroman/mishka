@@ -1,8 +1,7 @@
 .feedback {
-  outline: 1px solid red;
-
   padding-top: 40px;
   padding-bottom: 40px;
+  @include mobile-padding;
 }
 
 .feedback__write {

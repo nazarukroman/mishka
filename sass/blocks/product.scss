@@ -10,10 +10,14 @@
   }
 }
 
-.product__image {
-  display: flex;
+.product__photo {
+  display: block;
 
   margin-bottom: 30px;
+}
+
+.product__photo-image {
+  display: block;
 }
 
 .product__wrapper {

@@ -1,8 +1,9 @@
 .weekly-product {
-  outline: 1px solid red;
+  border-bottom: 1px dashed #cecece;
 
   padding-top: 30px;
   padding-bottom: 35px;
+  @include mobile-padding;
 }
 
 .weekly-product__title {
@@ -45,11 +46,25 @@
 }
 
 .weekly-product__parameters--border {
+  display: flex;
+
   border-bottom: 1px solid #ececec;
+}
+
+.weekly-product__field {
+  width: 95px;
+}
+
+.weekly-product__value {
+  width: 165px;
 }
 
 .weekly-product__photo {
   margin-bottom: 30px;
+}
+
+.weekly-product__photo-image {
+  display: block;
 }
 
 .weekly-product__price {

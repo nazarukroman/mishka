@@ -1,4 +1,35 @@
 .main-nav {
+  width: 320px;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  border-top: 1px solid #ececec;
+}
+
+.main-nav__toggle {
+  position: absolute;
+
+  top: 40px;
+  right: 40px;
+
+  width: 20.6px;
+  height: 20.6px;
+
+  background-image: url("../img/icon-menu-close.svg");
+  background-color: transparent;
+
+  border: none;
+
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: 768px;
+
+    flex-direction: row;
+
+    border: none;
+  }
 }

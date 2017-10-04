@@ -1,8 +1,7 @@
 .production {
-  outline: 1px solid red;
-
   padding-top: 25px;
   padding-bottom: 60px;
+  @include mobile-padding;
 }
 
 .production__title {

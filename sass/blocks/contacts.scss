@@ -1,8 +1,7 @@
 .contacts {
-  outline: 1px solid red;
-
   padding-top: 45px;
   padding-bottom: 40px;
+  @include mobile-padding;
 }
 
 .contacts__title {
@@ -23,11 +22,19 @@
 }
 
 .contacts__table-row {
-  display: block;
+  display: flex;
 
   margin-bottom: 40px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.contacts__field {
+  width: 75px;
+}
+
+.contacts__value {
+  width: 185px;
 }

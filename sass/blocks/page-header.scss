@@ -1,7 +1,36 @@
 .page-header {
+  width: 320px;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 
   background-color: #ffffff;
-  outline: 1px solid red;
+
+  padding-top: 30px;
+  @include mobile-padding;
+}
+
+.page-header__logo {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+.page-header__logo-image {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+    height: 88px;
+
+    flex-direction: row;
+
+    border-bottom: 1px solid #e7e7e7;
+
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

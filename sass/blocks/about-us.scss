@@ -1,8 +1,7 @@
 .about-us {
-  outline: 1px solid red;
-
   padding-top: 30px;
   padding-bottom: 30px;
+  @include mobile-padding;
 }
 
 .about-us__title {
