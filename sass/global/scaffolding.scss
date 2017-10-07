@@ -20,22 +20,20 @@ img {
   height: auto;
 }
 
-.container {
-  width: 320px;
-
-  margin: 0 auto;
-}
-
-.visibility-hidden {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
+.visibility-hidden:not(:focus):not(:active) {
   position: absolute;
+
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
   white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -45,5 +43,21 @@ img {
 
   .container {
     width: 768px;
+  }
+
+  .container--color {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (min-width: 1250px) {
+  body {
+    min-width: 1250px;
+  }
+
+  .container {
+    width: 1250px;
+
+    @include tablet-padding;
   }
 }

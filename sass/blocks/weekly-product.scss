@@ -18,7 +18,7 @@
 
 .weekly-product__subtitle {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
   font-weight: 700;
   color: #63d1bb;
 
@@ -86,4 +86,55 @@
 
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .weekly-product {
+    @include tablet-padding;
+  }
+
+  .weekly-product__titles {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    margin-bottom: 50px;
+  }
+
+  .weekly-product__title,
+  .weekly-product__subtitle {
+    margin: 0;
+  }
+
+  .weekly-product__title {
+    width: 501px;
+
+    font-size: 43px;
+  }
+
+  .weekly-product__subtitle {
+    width: 167px;
+
+    text-align: center;
+
+    padding-left: 50px;
+  }
+
+  .weekly-product__description-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .test {
+    width: 334px;
+
+    order: 1
+  }
+  .weekly-product__photo {
+    width: 334px;
+
+    order: 2
+  }
 }

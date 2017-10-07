@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  @include list-style;
+  @include list-reset;
 }
 
 .advantage-list__item {

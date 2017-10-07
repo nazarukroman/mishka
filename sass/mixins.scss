@@ -1,4 +1,4 @@
-@mixin list-style {
+@mixin list-reset {
   list-style: none;
 
   padding: 0;
@@ -8,4 +8,9 @@
 @mixin mobile-padding {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@mixin tablet-padding {
+  padding-left: 50px;
+  padding-right: 50px;
 }

@@ -1,12 +1,15 @@
 .order-form {
   width: 260px;
 
-  @include mobile-padding;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
 .order-form__item {
+  width: 100%;
+
   border: none;
+  border-top: 1px solid #62d1ba;
 
   padding: 0;
   margin-bottom: 30px;
@@ -26,22 +29,7 @@
   text-transform: uppercase;
 
   margin-bottom: 25px;
-}
-
-.order-form__title::before {
-  position: absolute;
-
-  content: "";
-
-  top: 50%;
-  left: 62px;
-
-  transform: translateY(-50%);
-
-  width: 198px;
-  height: 1px;
-
-  background-color: #62d1ba;
+  padding-right: 25px;
 }
 
 .order-form__option {
@@ -77,6 +65,10 @@
   }
 }
 
+.order-form__radio-button {
+  cursor: pointer;
+}
+
 .order-form__radio-button::before {
   position: absolute;
 
@@ -108,6 +100,10 @@
   background-color: #62d1ba;
 
   border-radius: 50%;
+}
+
+.order-form__checkbox-button {
+  cursor: pointer;
 }
 
 .order-form__checkbox-button::before {
@@ -147,7 +143,7 @@
 .order-form__text {
   width: 260px;
 
-  font-size: 17px;
+  font-size: 19px;
   line-height: 20px;
   font-weight: 400;
   color: #444444;
@@ -184,6 +180,11 @@
   height: 142px;
 
   border: 2px solid #444444;
+
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #444444;
 
   padding: 15px;
 }
