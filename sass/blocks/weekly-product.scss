@@ -3,6 +3,7 @@
 
   padding-top: 30px;
   padding-bottom: 35px;
+
   @include mobile-padding;
 }
 
@@ -127,11 +128,6 @@
     justify-content: flex-start;
   }
 
-  .test {
-    width: 334px;
-
-    order: 1
-  }
   .weekly-product__photo {
     width: 334px;
 

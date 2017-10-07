@@ -13,11 +13,10 @@
   }
   .page-header__wrapper {
     @include tablet-padding;
+
     margin: 0 auto;
   }
 }
 
 @media (min-width: $dekstop-width) {
-  .page-header {
-  }
 }
