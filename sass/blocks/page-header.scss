@@ -1,12 +1,18 @@
 .page-header {
+  width: 320px;
+
   display: flex;
   flex-direction: column;
 
   background-color: #ffffff;
+
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    width: 768px;
+
     height: 90px;
 
     border-bottom: 1px solid #e7e7e7;
@@ -15,5 +21,19 @@
   .page-header__wrapper {
     @include tablet-padding;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .page-header {
+    width: 1150px;
+
+    margin: 0 auto;
+  }
+
+  .page-header__wrapper {
+    width: 1050px;
+
+    padding: 0;
   }
 }

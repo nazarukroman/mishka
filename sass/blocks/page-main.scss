@@ -1,4 +1,6 @@
 .page-main {
+  width: 320px;
+
   margin: 0 auto;
 }
 
@@ -28,4 +30,16 @@
 .page-main__description {
   @include mobile-padding;
   margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: 768px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .page-main {
+    width: 1150px;
+  }
 }
