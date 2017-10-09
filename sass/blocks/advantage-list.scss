@@ -1,7 +1,4 @@
 .advantage-list {
-  display: flex;
-  flex-direction: column;
-
   @include list-reset;
 }
 
@@ -16,5 +13,20 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantage-list__item {
+    width: 50%;
+
+    font-size: 20px;
+    line-height: 22px;
   }
 }

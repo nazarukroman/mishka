@@ -83,17 +83,7 @@
   margin-bottom: 30px;
 }
 
-.weekly-product__order {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #444444;
-
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .weekly-product {
     width: 768px;
 
@@ -160,11 +150,12 @@
 
 @media (min-width: $dekstop-width) {
   .weekly-product {
-    width: 1050px;
+    width: 1150px;
 
     padding: 0;
     padding-top: 130px;
-    padding-left: 175px;
+    padding-left: 225px;
+    padding-right: 50px;
   }
 
   .weekly-product__titles {

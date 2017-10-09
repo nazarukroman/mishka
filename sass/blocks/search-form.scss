@@ -104,14 +104,14 @@
   }
 
   .search-form__text::-webkit-input-placeholder {
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
+    display: none;
+  }
+
+  .search-form__text::-moz-placeholder {
+    display: none;
+  }
+
+  .search-form__text:-ms-input-placeholder {
+    display: none;
   }
 }

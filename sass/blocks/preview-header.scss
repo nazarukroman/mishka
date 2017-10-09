@@ -97,8 +97,14 @@
 }
 
 @media (min-width: $dekstop-width) {
+  .preview-header {
+    padding: 0;
+  }
+
   .preview-header__wrapper {
-    width: 1050px;
+    width: 1150px;
+
+    @include tablet-padding;
   }
 
   .preview-header__title {

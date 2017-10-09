@@ -14,3 +14,28 @@
   margin: 0;
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    @include tablet-padding;
+  }
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .about-us {
+    width: 1050px;
+
+    padding-left: 175px;
+    padding-right: 175px;
+    margin: 0 auto;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
