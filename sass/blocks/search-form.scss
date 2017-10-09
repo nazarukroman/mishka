@@ -103,15 +103,21 @@
     padding: 0;
   }
 
-  .search-form__text::-webkit-input-placeholder {
-    display: none;
-  }
+  .search-form__text {
+    @include placeholder {
+      position: absolute;
 
-  .search-form__text::-moz-placeholder {
-    display: none;
-  }
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
 
-  .search-form__text:-ms-input-placeholder {
-    display: none;
+      white-space: nowrap;
+
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    };
   }
 }

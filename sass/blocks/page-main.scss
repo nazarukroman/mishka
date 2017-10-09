@@ -34,12 +34,6 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: 768px;
-  }
-}
-
-@media (min-width: $dekstop-width) {
-  .page-main {
-    width: 100%;
+    width: auto;
   }
 }

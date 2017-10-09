@@ -78,9 +78,9 @@
 
   cursor: pointer;
 }
+
 .reviews__toggle-button--previous {
   background-image: url("../img/icon-left-arrow.svg");
-
 }
 
 .reviews__toggle-button--next {
@@ -97,8 +97,11 @@
   .reviews__wrapper {
     position: relative;
 
+    width: 768px;
+
     @include tablet-padding;
     padding-top: 85px;
+    margin: 0 auto;
   }
 
   .reviews__wrapper::before {

@@ -64,18 +64,17 @@
   background-color: #56c3b2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .preview-header {
     background-color: #f9f9f9;
-
-    @include tablet-padding;
   }
 
   .preview-header__wrapper {
-    width: 668px;
+    width: 768px;
 
     background-size: cover;
 
+    @include tablet-padding;
     margin: 0 auto;
   }
 

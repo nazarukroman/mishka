@@ -14,3 +14,10 @@
   padding-left: 50px;
   padding-right: 50px;
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}

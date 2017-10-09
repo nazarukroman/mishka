@@ -48,6 +48,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+
+    padding: 0;
+    padding-bottom: 55px;
+    margin: 0 auto;
+  }
+
+  .contacts__wrapper {
+    padding-top: 70px;
+  }
+
   .contacts__address {
     width: 768px;
 
