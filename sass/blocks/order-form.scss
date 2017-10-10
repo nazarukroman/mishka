@@ -1,17 +1,12 @@
 .order-form {
-  width: 260px;
-
-  margin: 0 auto;
   margin-bottom: 50px;
 }
 
 .order-form__item {
-  width: 100%;
-
   border: none;
-  border-top: 1px solid #62d1ba;
 
   padding: 0;
+  margin: 0;
   margin-bottom: 30px;
 
   &:last-child {
@@ -19,8 +14,14 @@
   }
 }
 
+.order-form__item-wrapper {
+  border-top: 1px solid #63d1bb;
+}
+
 .order-form__title {
   position: relative;
+
+  display: table;
 
   font-size: 17px;
   line-height: 20px;
@@ -28,6 +29,9 @@
   color: #63d1bb;
   text-transform: uppercase;
 
+  background-color: #ffffff;
+
+  margin-top: -10px;
   margin-bottom: 25px;
   padding-right: 25px;
 }
@@ -120,6 +124,22 @@
   border: 2px solid #444444;
 }
 
+.order-form__input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .order-form__input:checked ~ .order-form__checkbox-button::after {
   position: absolute;
 
@@ -151,28 +171,15 @@
   border: none;
   border-bottom: 2px solid #000000;
 
+  padding: 0;
   padding-bottom: 5px;
-}
 
-.order-form__text::-webkit-input-placeholder {
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #dfdfdf;
-}
-
-.order-form__text::-moz-placeholder {
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #dfdfdf;
-}
-
-.order-form__text:-ms-input-placeholder {
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #dfdfdf;
+  @include placeholder {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #dfdfdf;
+  }
 }
 
 .order-form__additional-text {
@@ -187,27 +194,13 @@
   color: #444444;
 
   padding: 15px;
-}
 
-.order-form__additional-text::-webkit-input-placeholder {
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #dfdfdf;
-}
-
-.order-form__additional-text::-moz-placeholder {
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #dfdfdf;
-}
-
-.order-form__additional-text:-ms-input-placeholder {
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #dfdfdf;
+  @include placeholder {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #dfdfdf;
+  }
 }
 
 .order-form__requirement {
@@ -229,4 +222,147 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    width: auto;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .order-form__color-wrapper {
+    background-color: #f1f1f1;
+
+    padding-top: 50px;
+  }
+
+  .order-form__item {
+    width: 768px;
+
+    border: none;
+
+    @include tablet-padding;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+
+  .order-form__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    border: none;
+  }
+
+  .order-form__title {
+    width: 167px;
+
+    background-color: transparent;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .order-form__options {
+    width: 501px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .order-form__option--width {
+    width: 250px;
+  }
+
+  .order-form__option--position {
+    width: 501px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-form__subtitle {
+    width: auto;
+
+    margin: 0;
+    margin-right: 25px;
+  }
+
+  .order-form__text {
+    width: auto;
+
+    flex-grow: 1;
+
+    background-color: transparent;
+  }
+
+  .order-form__additional-text {
+    width: 501px;
+  }
+
+  .order-form__item--top:first-child {
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+
+  .order-form__item--top:last-child {
+    padding-top: 0;
+  }
+
+  .order-form__block {
+    width: 768px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet-padding;
+    margin: 0 auto;
+  }
+  .order-form__requirement {
+    font-size: 17px;
+
+    order: 2;
+
+    margin: 0;
+  }
+
+  .order-form__order {
+    width: 230px;
+
+    order: 1;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .order-form__item {
+    width: 1150px;
+  }
+
+  .order-form__title {
+    width: 175px;
+
+    text-align: center;
+  }
+
+  .order-form__options {
+    width: 875px;
+  }
+
+  .order-form__option {
+    width: 290px;
+  }
+
+  .order-form__option--position {
+    width: 700px;
+  }
+
+  .order-form__additional-text {
+    width: 700px;
+  }
 }
