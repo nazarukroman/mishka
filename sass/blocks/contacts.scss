@@ -3,6 +3,10 @@
   padding-bottom: 40px;
 }
 
+.contacts__address {
+  @include mobile-container;
+}
+
 .contacts__title {
   font-size: 25px;
   line-height: 30px;
@@ -31,10 +35,15 @@
 }
 
 .contacts__map {
+  width: 320px;
+
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .contacts__feedback {
+  @include mobile-container;
+
   @include mobile-padding;
 }
 

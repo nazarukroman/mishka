@@ -1,9 +1,10 @@
 .weekly-product {
+  @include mobile-container;
+
   border-bottom: 1px dashed #cecece;
 
   padding-top: 30px;
   padding-bottom: 35px;
-
   @include mobile-padding;
 }
 

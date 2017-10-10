@@ -3,10 +3,9 @@
 }
 
 .page-footer__wrapper {
-  width: 320px;
+  @include mobile-container;
 
   @include mobile-padding;
-  margin: 0 auto;
 }
 
 .page-footer__logo {
