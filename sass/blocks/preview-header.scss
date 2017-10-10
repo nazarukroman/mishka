@@ -62,6 +62,12 @@
 @media (min-width: $tablet-width) {
   .preview-header__wrapper {
     width: 768px;
+    min-height: 746px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     background-size: cover;
 
@@ -69,8 +75,17 @@
     margin: 0 auto;
   }
 
+  .preview-header__title {
+    width: auto;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    @include tablet-padding;
+  }
+
   .preview-header__description {
-    flex-direction: row;
+    display: flex;
   }
 
   .preview-header__subtitle {
@@ -102,6 +117,8 @@
     line-height: 57px;
 
     padding: 0;
+    padding-left: 175px;
+    padding-right: 175px;
   }
 
   .preview-header__description {
