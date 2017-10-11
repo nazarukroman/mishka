@@ -1,5 +1,23 @@
 .catalog {
-  outline: 1px solid red;
-
+  @include mobile-container;
+  @include mobile-padding;
   padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 768px;
+
+    @include tablet-padding;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .catalog {
+    width: 1150px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

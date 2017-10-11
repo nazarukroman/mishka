@@ -1,3 +1,37 @@
 .page-footer {
-  outline: 1px solid red;
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  @include mobile-container;
+  @include mobile-padding;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: 768px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet-padding;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .page-footer__wrapper {
+    width: 1150px;
+  }
 }

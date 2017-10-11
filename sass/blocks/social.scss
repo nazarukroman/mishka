@@ -1,27 +1,33 @@
 .social {
-  outline: 1px solid blue;
-
   padding-top: 25px;
   padding-bottom: 25px;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
   width: 260px;
 
-  list-style: none;
+  text-align: center;
 
-  border-bottom: 1px solid #e5e5e5;
-
-  padding: 0;
-  margin: 0;
+  @include list-reset;
 }
 
 .social__item {
+  display: inline-block;
+
   margin-left: 20px;
   margin-right: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+
+    padding: 0;
+  }
+}
+
+// @media (min-width: $dekstop-width) {
+//
+// }

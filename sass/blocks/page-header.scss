@@ -1,7 +1,34 @@
 .page-header {
-  display: flex;
-  flex-direction: row;
+  @include mobile-container;
 
   background-color: #ffffff;
-  outline: 1px solid red;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: auto;
+
+    height: 90px;
+
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .page-header__wrapper {
+    width: 768px;
+
+    @include tablet-padding;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .page-header {
+    width: auto;
+
+    margin: 0 auto;
+  }
+
+  .page-header__wrapper {
+    width: 1150px;
+  }
 }

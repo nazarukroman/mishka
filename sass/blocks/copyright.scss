@@ -1,14 +1,13 @@
 .copyright {
-  outline: 1px solid red;
-
-  display: flex;
-  align-items: center;
+  text-align: center;
 
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .copyright__text {
+  display: inline-block;
+
   font-size: 19px;
   line-height: 20px;
   font-weight: 700;
@@ -18,5 +17,17 @@
 }
 
 .copyright__link {
-  display: flex;
+  display: inline-block;
+
+  vertical-align: middle;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+}
+
+// @media (min-width: $dekstop-width) {
+//
+// }

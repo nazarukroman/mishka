@@ -1,0 +1,40 @@
+@mixin list-reset {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+@mixin mobile-padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin mobile-container {
+  width: 320px;
+
+  margin: 0 auto;
+}
+
+@mixin tablet-padding {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}

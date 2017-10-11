@@ -1,8 +1,10 @@
 .contacts {
-  outline: 1px solid red;
-
   padding-top: 45px;
   padding-bottom: 40px;
+}
+
+.contacts__address {
+  @include mobile-container;
 }
 
 .contacts__title {
@@ -22,12 +24,157 @@
   color: #444444;
 }
 
-.contacts__table-row {
-  display: block;
+.contacts__table tr {
+  display: flex;
 
   margin-bottom: 40px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.contacts__map {
+  width: 320px;
+
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.contacts__feedback {
+  @include mobile-container;
+  @include mobile-padding;
+}
+
+
+.contacts__field {
+  width: 75px;
+}
+
+.contacts__value {
+  width: 185px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+
+    padding: 0;
+    padding-bottom: 55px;
+    margin: 0 auto;
+  }
+
+  .contacts__wrapper {
+    padding-top: 70px;
+  }
+
+  .contacts__address {
+    width: 768px;
+
+    @include tablet-padding;
+  }
+
+  .contacts__title {
+    position: relative;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-bottom: 65px;
+  }
+
+  .contacts__title::before {
+    position: absolute;
+
+    content: "";
+
+    top: 0;
+    right: 0;
+
+    width: 46.7px;
+    height: 81.7px;
+    background-image: url("../img/icon-flag.svg");
+  }
+
+  .contacts__table {
+    width: 668px;
+
+    font-size: 17px;
+    line-height: 30px;
+
+    margin-bottom: 65px;
+  }
+
+  .contacts__table tbody {
+    display: flex;
+  }
+
+  .contacts__table tr {
+    width: 334px;
+  }
+
+  .contacts__map {
+    width: 768px;
+    height: 457px;
+
+    outline: 1px solid red;
+  }
+
+  .contacts__feedback {
+    @include tablet-padding;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .contacts {
+    width: 1150px;
+
+    @include tablet-padding;
+    margin: 0 auto;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-left: 175px;
+  }
+
+  .contacts__address {
+    width: 350px;
+
+    padding: 0;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__title::before {
+    left: -65px;
+  }
+
+  .contacts__table tbody {
+    display: block;
+  }
+
+  .contacts__table tr {
+    width: 350px;
+  }
+
+  .contacts__map {
+    width: 525px;
+    height: 457px;
+
+    margin: 0;
+  }
+
+  .contacts__feedback {
+    width: 350px;
+
+    padding: 0;
+    margin: 0;
+    margin-top: -52px;
   }
 }

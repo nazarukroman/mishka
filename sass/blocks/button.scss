@@ -1,10 +1,84 @@
 .button {
+  min-height: 52px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 260px;
-  height: 52px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  cursor: pointer;
 
   border: 2px solid #444444;
+
+  padding: 0;
+}
+
+.button--order {
+  width: 260px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #444444;
+}
+
+.button--order-width {
+  width: 192px;
+}
+
+.button-reviews {
+  width: 260px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #444444;
+}
+
+.button--feedback {
+  width: 260px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #444444;
+
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .button--order {
+    width: 292px;
+  }
+
+  .button--order-width {
+    width: 584px;
+
+    margin: 0 auto;
+  }
+
+  .button-reviews {
+    width: 175px;
+
+    order: 2;
+
+    margin-bottom: 50px;
+  }
+
+  .button--feedback {
+    width: 230px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .button--feedback {
+    margin: 0;
+  }
+
+  .button--order-width {
+    width: 230px;
+  }
 }

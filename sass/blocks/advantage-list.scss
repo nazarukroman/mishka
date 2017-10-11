@@ -1,9 +1,32 @@
 .advantage-list {
-  display: flex;
-  flex-direction: column;
+  @include list-reset;
+}
 
-  list-style: none;
+.advantage-list__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
 
-  padding: 0;
-  margin: 0;
+  padding-top: 60px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantage-list__item {
+    width: 50%;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

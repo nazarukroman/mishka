@@ -1,43 +1,127 @@
 .preview-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-color: #f9f9f9;
+}
 
-  width: 575px;
-  height: 373px;
+.preview-header__wrapper {
+  min-height: 373px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
 
-  outline: 1px solid blue;
+  padding-top: 90px;
+  margin: 0 auto;
 }
 
 .preview-header__title {
+  @include mobile-container;
+
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
 
-  margin: 0;
-}
+  text-align: center;
 
-.preview-header__description {
-  display: flex;
-  flex-direction: column;
-}
-
-.preview-header__wrapper-subtitle--interior {
-  background-color: #63d1bb;
-}
-
-.preview-header__wrapper-subtitle--toy {
-  background-color: #56c3b2;
+  @include mobile-padding;
+  margin-bottom: 120px;
 }
 
 .preview-header__subtitle {
+  min-height: 100px;
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.preview-header__subtitle-text {
+  width: 320px;
+
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
 
   text-decoration: none;
+
+  padding-left: 50px;
+  padding-right: 160px;
+  margin: 0 auto;
+}
+
+.preview-header__subtitle--interior {
+  background-color: #63d1bb;
+}
+
+.preview-header__subtitle--toy {
+  background-color: #56c3b2;
+}
+
+@media (min-width: $tablet-width) {
+  .preview-header__wrapper {
+    width: 768px;
+    min-height: 746px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-size: cover;
+
+    @include tablet-padding;
+    margin: 0 auto;
+  }
+
+  .preview-header__title {
+    width: auto;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    @include tablet-padding;
+  }
+
+  .preview-header__description {
+    display: flex;
+  }
+
+  .preview-header__subtitle {
+    width: 50%;
+
+    @include tablet-padding;
+  }
+
+  .preview-header__subtitle-text {
+    width: 167px;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .preview-header {
+    padding: 0;
+  }
+
+  .preview-header__wrapper {
+    width: 1150px;
+
+    @include tablet-padding;
+  }
+
+  .preview-header__title {
+    font-size: 53px;
+    line-height: 57px;
+
+    padding: 0;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .preview-header__description {
+    width: 1050px;
+  }
 }
