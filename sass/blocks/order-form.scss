@@ -377,7 +377,7 @@
       border-color: #62d1ba;
     }
 
-    &:focus ~ .order-form__icon
+    &:focus ~ .order-form__icon,
     &:hover ~ .order-form__icon,
     &:active ~ .order-form__icon {
       opacity: 1;

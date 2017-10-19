@@ -24,7 +24,6 @@
 
 .page-main__description {
   @include mobile-container;
-
   @include mobile-padding;
   margin-bottom: 25px;
 }

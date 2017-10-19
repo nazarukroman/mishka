@@ -5,7 +5,6 @@
 
 .contacts__address {
   @include mobile-container;
-
   @include mobile-padding;
 }
 
@@ -222,7 +221,7 @@
   }
 
   .contacts__map iframe {
-    width: 768px;
+    width: 525px;
   }
 
   .contacts__feedback {

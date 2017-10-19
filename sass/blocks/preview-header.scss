@@ -151,6 +151,7 @@
     width: 1150px;
 
     background-image: url("../img/hero-desktop@1x.jpg");
+
     @include tablet-padding;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
