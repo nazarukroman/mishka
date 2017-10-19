@@ -3,6 +3,8 @@
 }
 
 .advantage-list__item {
+  position: relative;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -14,6 +16,59 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.advantage-list__flower-icon::before {
+  width: 32px;
+  height: 37.3px;
+
+  background-image: url("../img/icon-feature-flower.svg");
+}
+
+.advantage-list__money-icon::before {
+  width: 47px;
+  height: 27px;
+
+  background-image: url("../img/icon-feature-money.svg");
+}
+
+.advantage-list__heart-icon:before {
+  width: 33px;
+  height: 28px;
+
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
+.advantage-list__ball-icon::before {
+  width: 34px;
+  height: 34px;
+
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.advantage-list__rocket-icon::before {
+  width: 54px;
+  height: 23px;
+
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.advantage-list__gift-icon:before {
+  width: 33px;
+  height: 33px;
+
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {

@@ -9,8 +9,6 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  cursor: pointer;
-
   border: 2px solid #444444;
 
   padding: 0;
@@ -74,6 +72,22 @@
 }
 
 @media (min-width: $dekstop-width) {
+  .button {
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      background-color: #444444;
+      color: rgba(255, 255, 255, 1);
+
+      border: none;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
   .button--feedback {
     margin: 0;
   }

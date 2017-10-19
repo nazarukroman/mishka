@@ -76,7 +76,7 @@
 
   border: 1px solid #ececec;
 
-  cursor: pointer;
+  padding: 0;
 }
 
 .reviews__toggle-button--previous {
@@ -119,6 +119,11 @@
     width: 350px;
     height: 457px;
     background-image: url("../img/review@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: contain;
+    }
   }
 
   .reviews__item {
@@ -186,5 +191,18 @@
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .reviews__toggle-button {
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
