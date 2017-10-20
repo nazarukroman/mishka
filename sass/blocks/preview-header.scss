@@ -112,7 +112,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: contain;
+      background-size: cover;
     }
   }
 
@@ -170,16 +170,25 @@
 
   .preview-header__description {
     width: 1050px;
+
+    align-items: flex-end;
   }
 
   .preview-header__subtitle {
-    &:focus,
-    &:hover {
-      min-height: 105px;
-    }
+    height: 100px;
 
     &:active h2 {
       color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .preview-header__subtitle--interior,
+  .preview-header__subtitle--toy {
+    &:focus,
+    &:hover {
+      min-height: 105px;
+
+      padding-bottom: 5px;
     }
   }
 }
