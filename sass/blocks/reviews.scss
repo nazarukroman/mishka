@@ -1,10 +1,27 @@
 .reviews {
+  position: relative;
+
   @include mobile-container;
 
   padding-top: 30px;
   padding-bottom: 40px;
 
   @include mobile-padding;
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    left: 0;
+    right: 0;
+    bottom: -23px;
+
+    width: 320px;
+    height: 23px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+  }
 }
 
 .reviews__item-title {
@@ -94,6 +111,13 @@
     width: auto;
 
     padding: 0;
+    margin-bottom: 60px;
+
+    &::before {
+      bottom: -83px;
+
+      width: 768px;
+    }
   }
 
   .reviews__wrapper {
@@ -175,6 +199,13 @@
 
     @include tablet-padding;
     margin: 0 auto;
+    margin-bottom: 50px;
+
+    &::before {
+      bottom: -93px;
+
+      width: 1150px;
+    }
   }
 
   .reviews__wrapper {
