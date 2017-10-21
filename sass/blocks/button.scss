@@ -47,6 +47,19 @@
   margin: 0 auto;
 }
 
+.button--modal {
+  width: 260px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #63d1bb;
+
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .button--order {
     width: 292px;

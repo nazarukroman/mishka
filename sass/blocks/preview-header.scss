@@ -10,7 +10,7 @@
   background-position: 50% 0;
   background-repeat: no-repeat;
 
-  padding-top: 90px;
+  padding-top: 70px;
   margin: 0 auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -30,11 +30,11 @@
   text-align: center;
 
   @include mobile-padding;
-  margin-bottom: 120px;
+  margin-bottom: 122px;
 }
 
 .preview-header__subtitle {
-  min-height: 100px;
+  min-height: 103px;
 
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@
 
   text-decoration: none;
 
-  padding-left: 50px;
+  padding-left: 30px;
   padding-right: 160px;
   margin: 0 auto;
 }

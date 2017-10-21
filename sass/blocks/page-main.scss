@@ -1,13 +1,11 @@
 .page-main__title-wrapper {
-  min-height: 256px;
+  min-height: 176px;
 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 
   background-color: #f1f1f1;
-
-  margin-bottom: 30px;
 }
 
 .page-main__title {
@@ -23,9 +21,13 @@
 }
 
 .page-main__description {
+  font-size: 13px;
+  line-height: 24px;
+
   @include mobile-container;
   @include mobile-padding;
-  margin-bottom: 25px;
+  padding-top: 22px;
+  margin-bottom: 32px;
 }
 
 .page-main__form {

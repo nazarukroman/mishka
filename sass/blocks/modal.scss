@@ -1,0 +1,74 @@
+.modal {
+  @include mobile-container;
+  width: 320px;
+
+  border-top: 1px solid #c7c7c7;
+
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+
+  @include mobile-padding;
+  padding-top: 37px;
+  padding-bottom: 47px;
+}
+
+.modal__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+}
+
+.modal__subtitle {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  text-align: center;
+
+  margin: 0;
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.modal__value label {
+  width: 80px;
+  min-height: 53px;
+
+  border: 2px solid #ececec;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__value input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal__value input:hover ~ label {
+  border-color: #c7c7c7;
+}
+
+.modal__value input:checked ~ label,
+.modal__value input:active ~ label {
+  border-color: #63d1bb;
+}
