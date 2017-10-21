@@ -3,14 +3,20 @@
 }
 
 .preview-header__wrapper {
+  width: 320px;
   min-height: 373px;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
 
-  padding-top: 90px;
+  padding-top: 70px;
   margin: 0 auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 620px auto;
+  }
 }
 
 .preview-header__title {
@@ -24,11 +30,11 @@
   text-align: center;
 
   @include mobile-padding;
-  margin-bottom: 120px;
+  margin-bottom: 122px;
 }
 
 .preview-header__subtitle {
-  min-height: 100px;
+  min-height: 103px;
 
   display: flex;
   align-items: center;
@@ -46,17 +52,47 @@
 
   text-decoration: none;
 
-  padding-left: 50px;
+  padding-left: 30px;
   padding-right: 160px;
   margin: 0 auto;
 }
 
 .preview-header__subtitle--interior {
+  position: relative;
+
   background-color: #63d1bb;
 }
 
 .preview-header__subtitle--toy {
+  position: relative;
+
   background-color: #56c3b2;
+}
+
+.preview-header__interior-icon {
+  position: absolute;
+
+  top: 50%;
+  right: 35px;
+
+  transform: translateY(-50%);
+
+  path {
+    fill: #3bb09d;
+  }
+}
+
+.preview-header__toy-icon {
+  position: absolute;
+
+  top: 50%;
+  right: 27px;
+
+  transform: translateY(-50%);
+
+  path {
+    fill: #3bb09d;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -69,10 +105,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    background-size: cover;
+    background-image: url("../img/hero-tablet@1x.jpg");
 
     @include tablet-padding;
     margin: 0 auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .preview-header__title {
@@ -109,7 +150,13 @@
   .preview-header__wrapper {
     width: 1150px;
 
+    background-image: url("../img/hero-desktop@1x.jpg");
+
     @include tablet-padding;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   .preview-header__title {
@@ -123,5 +170,25 @@
 
   .preview-header__description {
     width: 1050px;
+
+    align-items: flex-end;
+  }
+
+  .preview-header__subtitle {
+    height: 100px;
+
+    &:active h2 {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .preview-header__subtitle--interior,
+  .preview-header__subtitle--toy {
+    &:focus,
+    &:hover {
+      min-height: 105px;
+
+      padding-bottom: 5px;
+    }
   }
 }

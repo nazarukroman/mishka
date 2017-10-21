@@ -1,10 +1,27 @@
 .reviews {
+  position: relative;
+
   @include mobile-container;
 
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 22px;
+  padding-bottom: 35px;
 
   @include mobile-padding;
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    left: 0;
+    right: 0;
+    bottom: -23px;
+
+    width: 320px;
+    height: 23px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+  }
 }
 
 .reviews__item-title {
@@ -14,7 +31,7 @@
   color: #000000;
 
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .reviews__item {
@@ -23,12 +40,16 @@
 
 .reviews__item-text {
   font-size: 15px;
-  line-height: 24px;
+  line-height: 29px;
   font-weight: 400;
   color: #444444;
 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 29px;
+}
+
+.reviews__author {
+  margin-bottom: 29px;
 }
 
 .reviews__author-name {
@@ -39,8 +60,6 @@
   font-weight: 700;
   font-style: normal;
   color: #000000;
-
-  margin-bottom: 15px;
 }
 
 .reviews__author-id {
@@ -50,8 +69,6 @@
   line-height: 30px;
   font-weight: 400;
   color: #000000;
-
-  margin-bottom: 35px;
 }
 
 .reviews__toggle {
@@ -63,7 +80,7 @@
   flex-direction: row;
   justify-content: center;
 
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .reviews__toggle-button {
@@ -76,7 +93,7 @@
 
   border: 1px solid #ececec;
 
-  cursor: pointer;
+  padding: 0;
 }
 
 .reviews__toggle-button--previous {
@@ -91,9 +108,16 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    width: auto;
+    width: 768px;
 
     padding: 0;
+    margin-bottom: 60px;
+
+    &::before {
+      bottom: -83px;
+
+      width: 768px;
+    }
   }
 
   .reviews__wrapper {
@@ -119,6 +143,11 @@
     width: 350px;
     height: 457px;
     background-image: url("../img/review@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: contain;
+    }
   }
 
   .reviews__item {
@@ -170,6 +199,13 @@
 
     @include tablet-padding;
     margin: 0 auto;
+    margin-bottom: 50px;
+
+    &::before {
+      bottom: -93px;
+
+      width: 1150px;
+    }
   }
 
   .reviews__wrapper {
@@ -186,5 +222,18 @@
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .reviews__toggle-button {
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

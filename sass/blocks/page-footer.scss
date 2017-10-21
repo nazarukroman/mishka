@@ -34,4 +34,21 @@
   .page-footer__wrapper {
     width: 1150px;
   }
+
+  .page-footer__logo {
+    &:focus,
+    &:hover {
+      path {
+        fill: #46c1ae;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__logo-img {
+    display: block;
+  }
 }

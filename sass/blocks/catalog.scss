@@ -1,7 +1,8 @@
 .catalog {
   @include mobile-container;
   @include mobile-padding;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {

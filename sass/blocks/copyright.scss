@@ -1,25 +1,29 @@
 .copyright {
   text-align: center;
 
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 20px;
-}
-
-.copyright__text {
-  display: inline-block;
-
-  font-size: 19px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #000000;
-
-  margin-right: 30px;
 }
 
 .copyright__link {
   display: inline-block;
 
   vertical-align: middle;
+
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+
+  text-decoration: none;
+}
+
+.copyright__link-img {
+  display: inline-block;
+
+  vertical-align: middle;
+
+  margin-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,6 +32,17 @@
   }
 }
 
-// @media (min-width: $dekstop-width) {
-//
-// }
+@media (min-width: $dekstop-width) {
+  .copyright__link {
+    &:focus,
+    &:hover {
+      path {
+        fill: #63d1bb;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
