@@ -11,9 +11,9 @@
 .page-main__title {
   @include mobile-container;
 
+  font-family: "Open Sans Bold", sans-serif;
   font-size: 27px;
   line-height: 30px;
-  font-weight: 700;
   color: #000000;
   text-align: center;
 
