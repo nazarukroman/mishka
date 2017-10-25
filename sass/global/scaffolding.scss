@@ -45,6 +45,10 @@ img {
   display: block;
 }
 
+.svg-sprite {
+  display: none;
+}
+
 @media (min-width: 768px) {
   body {
     min-width: 768px;

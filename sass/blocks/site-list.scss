@@ -123,6 +123,11 @@
 
 @media (min-width: $dekstop-width) {
   .site-list__item-link {
+    .site-list__icon-search,
+    .site-list__icon-cart {
+      fill: #d3d2d2;
+    }
+
     &:hover,
     &:focus {
       color: rgba(0, 0, 0, 0.6);
@@ -136,16 +141,12 @@
     &:hover .site-list__icon-search,
     &:focus .site-list__icon-cart,
     &:hover .site-list__icon-cart {
-      path {
-        fill: #63d1bb;
-      }
+      fill: #63d1bb;
     }
 
     &:active .site-list__icon-search,
     &:active .site-list__icon-cart {
-      path {
-        opacity: 0.3;
-      }
+      opacity: 0.3;
     }
   }
 

@@ -160,17 +160,15 @@
   .product__order {
     cursor: pointer;
 
+    fill: #d3d2d2;
+
     &:focus,
     &:hover {
-      svg path {
-        fill: #63d1bb;
-      }
+      fill: #63d1bb;
     }
 
     &:active {
-      svg path {
-        opacity: 0.3;
-      }
+      opacity: 0.3;
     }
   }
 }
