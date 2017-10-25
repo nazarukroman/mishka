@@ -22,9 +22,10 @@
 .preview-header__title {
   @include mobile-container;
 
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 27px;
   line-height: 30px;
+  font-weight: 700;
   color: #000000;
 
   text-align: center;
@@ -45,9 +46,10 @@
 .preview-header__subtitle-text {
   width: 320px;
 
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 19px;
   line-height: 24px;
+  font-weight: 700;
   color: #ffffff;
 
   text-decoration: none;

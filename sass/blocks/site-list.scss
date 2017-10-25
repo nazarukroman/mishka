@@ -1,5 +1,6 @@
 .site-list {
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-weight: 700;
 }
 
 .site-list__item-link {
@@ -7,9 +8,10 @@
 
   display: block;
 
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
+  font-weight: 700;
   color: #000000;
   text-decoration: none;
   text-align: center;

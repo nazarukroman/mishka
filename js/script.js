@@ -17,8 +17,8 @@ navToggle.addEventListener('click', function() {
 })
 
 if (document.getElementById('product__order') || document.getElementById('modal-block')) {
-  var popup = document.querySelector('.modal');
-  var popupBack = document.querySelector('.modal__background');
+  var popup = document.querySelector('.modal__content');
+  var popupBack = document.querySelector('.modal');
   var btnOrder = document.querySelector('.button--order');
 
   btnOrder.addEventListener('click', function(evt) {
@@ -37,7 +37,7 @@ if (document.getElementById('product__order') || document.getElementById('modal-
     })
   }
 
-  window.addEventListener("keydown", function(event) {
+  window.addEventListener('keydown', function(event) {
     if (event.keyCode === 27) {
       if (popup.classList.contains('modal--show')) {
         popup.classList.remove('modal--show');
@@ -46,8 +46,8 @@ if (document.getElementById('product__order') || document.getElementById('modal-
     }
   });
 
-  popup.addEventListener('click', function(event) {
-    if (event.currentTarget.length === 0) {
+  popupBack.addEventListener('click', function(event) {
+    if (event.target === this) {
       popupBack.classList.remove('modal--show');
       popup.classList.remove('modal--show');
     }
