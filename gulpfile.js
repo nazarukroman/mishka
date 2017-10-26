@@ -7,7 +7,7 @@ var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
-var minify = require("gulp-csso");
+var minifycss = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
@@ -38,9 +38,10 @@ gulp.task("style", function () {
       autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
-    .pipe(minify())
+    .pipe(minifycss())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("sprite", function () {
@@ -57,7 +58,8 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function () {

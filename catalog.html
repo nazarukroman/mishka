@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="svg-sprite">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -33,7 +37,7 @@
               <li class="site-list__item">
                 <a class="site-list__item-link site-list__item-link--search" href="search.html">
                   <svg class="site-list__icon-search" width="17.6" height="17.6">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                    <use xlink:href="#icon-search"></use>
                   </svg>
                   <span class="site-list__item-search">Поиск по сайту</span>
                 </a>
@@ -41,7 +45,7 @@
               <li class="site-list__item">
                 <a class="site-list__item-link site-list__item-link--cart" href="#">
                   <svg class="site-list__icon-cart" width="20.294" height="19">
-                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    <use xlink:href="#icon-cart"></use>
                   </svg>
                   Корзина: пока пуста
                 </a>
@@ -86,7 +90,7 @@
               <span class="product__price">1 200 руб.</span>
               <a id="product__order" class="product__order" href="product.html">
                 <svg class="image-block" width="20.294" height="18.849">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
                 <span class="visibility-hidden">В корзину!</span>
               </a>
@@ -112,7 +116,7 @@
               <span class="product__price">690 руб.</span>
               <a class="product__order"  href="product.html">
                 <svg class="image-block" width="20.294" height="18.849">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
                 <span class="visibility-hidden">В корзину!</span>
               </a>
@@ -138,7 +142,7 @@
               <span class="product__price">1 500 руб.</span>
               <a class="product__order"  href="product.html">
                 <svg class="image-block" width="20.294" height="18.849">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
                 <span class="visibility-hidden">В корзину!</span>
               </a>
@@ -168,7 +172,7 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="#">
           <svg class="image-block" width="101.615" height="34.056">
-            <use xlink:href="img/sprite.svg#logo-footer"></use>
+            <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
         <article class="social">
@@ -178,7 +182,7 @@
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
                 <span class="visibility-hidden">Мы в Инстаграме</span>
                 <svg class="image-block" width="21.769" height="21.334">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -186,7 +190,7 @@
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visibility-hidden">Мы в Фейсбуке</span>
                 <svg class="image-block" width="14.962" height="27.718">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -194,7 +198,7 @@
               <a class="social__link social__link--facebook" href="https://twitter.com/htmlacademy_ru">
                 <span class="visibility-hidden">Мы в Твиттере</span>
                 <svg class="image-block" width="23.494" height="20.168">
-                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -204,7 +208,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано
             <svg class="copyright__link-img" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
