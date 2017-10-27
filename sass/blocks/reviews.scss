@@ -25,9 +25,10 @@
 }
 
 .reviews__item-title {
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
+  font-weight: 700;
   color: #000000;
 
   margin: 0;
@@ -55,9 +56,10 @@
 .reviews__author-name {
   display: inline-block;
 
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
+  font-weight: 700;
   font-style: normal;
   color: #000000;
 }

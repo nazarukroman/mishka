@@ -20,9 +20,10 @@
 
   display: table;
 
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
+  font-weight: 700;
   color: #63d1bb;
   text-transform: uppercase;
 
@@ -41,9 +42,10 @@
 
   min-height: 40px;
 
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
+  font-weight: 700;
   color: #000000;
 
   padding-left: 62px;
@@ -214,9 +216,10 @@
 .order-form__order {
   width: 260px;
 
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
   color: #444444;
 
   text-transform: uppercase;
@@ -388,9 +391,7 @@
     &:active ~ .order-form__icon {
       opacity: 1;
 
-      path {
-        fill: #62d1ba;
-      }
+      fill: #62d1ba;
     }
   }
 

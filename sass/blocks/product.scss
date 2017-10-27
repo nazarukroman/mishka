@@ -33,9 +33,10 @@
 }
 
 .product__title {
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
+  font-weight: 700;
   color: #000000;
 
   margin: 0;
@@ -159,17 +160,15 @@
   .product__order {
     cursor: pointer;
 
+    fill: #d3d2d2;
+
     &:focus,
     &:hover {
-      svg path {
-        fill: #63d1bb;
-      }
+      fill: #63d1bb;
     }
 
     &:active {
-      svg path {
-        opacity: 0.3;
-      }
+      opacity: 0.3;
     }
   }
 }

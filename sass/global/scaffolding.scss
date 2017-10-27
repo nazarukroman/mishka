@@ -11,7 +11,7 @@ html {
 body {
   min-width: 320px;
 
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 30px;
   color: #000000;
@@ -43,6 +43,10 @@ img {
 
 .image-block {
   display: block;
+}
+
+.svg-sprite {
+  display: none;
 }
 
 @media (min-width: 768px) {
