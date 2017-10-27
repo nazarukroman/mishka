@@ -32,7 +32,7 @@
   .main-nav {
     position: relative;
 
-    min-height: 80px;
+    height: 80px;
   }
 
   .main-nav--closed .main-nav__list {
@@ -54,6 +54,7 @@
     background-color: transparent;
 
     border: none;
+    border-radius: inherit;
 
     padding: 0;
   }
@@ -103,6 +104,10 @@
   }
 
   .main-nav__wrapper {
+    position: relative;
+
+    z-index: 10;
+
     width: 668px;
 
     display: flex;
@@ -141,14 +146,21 @@
 
   .main-nav__delivery {
     display: block;
+
     order: 4;
 
+    font-size: 15px;
+
     margin: 0;
-    margin-top: 25px;
+    margin-top: 14px;
   }
 }
 
 @media (min-width: $dekstop-width) {
+  .main-nav {
+    width: 1050px;
+  }
+
   .main-nav__wrapper {
     width: 1050px;
   }

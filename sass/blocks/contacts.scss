@@ -6,6 +6,8 @@
 .contacts__address {
   @include mobile-container;
   @include mobile-padding;
+
+  padding-bottom: 35px;
 }
 
 .contacts__title {
@@ -24,8 +26,6 @@
   line-height: 28px;
   font-weight: 400;
   color: #444444;
-
-  margin-bottom: 68px;
 }
 
 .contacts__table tr {
@@ -36,6 +36,20 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.contacts__field {
+  width: 75px;
+  max-width: 75px;
+  word-wrap: break-word;
+}
+
+.contacts__value {
+  width: 185px;
+  max-width: 185px;
+  word-wrap: break-word;
+
+  line-height: 29px;
 }
 
 .contacts__mail-link {
@@ -54,7 +68,7 @@
   background-size: contain;
 
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
@@ -71,15 +85,6 @@
 .contacts__feedback {
   @include mobile-container;
   @include mobile-padding;
-}
-
-
-.contacts__field {
-  width: 75px;
-}
-
-.contacts__value {
-  width: 185px;
 }
 
 @media (min-width: $tablet-width) {
