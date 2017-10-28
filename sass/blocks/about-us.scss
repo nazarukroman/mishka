@@ -35,17 +35,20 @@
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .about-us {
     width: 1050px;
 
     padding-left: 175px;
     padding-right: 175px;
+    padding-top: 62px;
     margin: 0 auto;
   }
 
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
+
+    margin-left: 3px;
   }
 }

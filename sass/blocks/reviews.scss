@@ -114,11 +114,9 @@
 
     padding: 0;
     padding-top: 53px;
-    margin-bottom: 60px;
+    padding-bottom: 110px;
 
     &::before {
-      bottom: -83px;
-
       width: 768px;
     }
   }
@@ -131,25 +129,25 @@
     @include tablet-padding;
     padding-top: 77px;
     margin: 0 auto;
-  }
 
-  .reviews__wrapper::before {
-    position: absolute;
+    &::before {
+      position: absolute;
 
-    z-index: -1;
+      z-index: -1;
 
-    content: "";
+      content: "";
 
-    top: 0;
-    left: 0;
+      top: 6px;
+      left: 7px;
 
-    width: 350px;
-    height: 457px;
-    background-image: url("../img/review@1x.jpg");
+      width: 350px;
+      height: 457px;
+      background-image: url("../img/review@1x.jpg");
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/review@2x.jpg");
-      background-size: contain;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+        background-size: contain;
+      }
     }
   }
 
@@ -184,6 +182,8 @@
     width: 334px;
 
     order: 4;
+
+    margin-bottom: 0;
   }
 
   .reviews__author-name {
@@ -191,25 +191,35 @@
   }
 
   .reviews__toggle {
+    width: auto;
+
     order: 5;
+
+    margin-right: 19px;
+    margin-top: 5px;
+    margin-bottom: 0;
   }
 
   .reviews__toggle-button {
+    width: 50px;
+
     border: none;
+  }
+
+  .reviews__toggle-button--next {
+    margin-left: 37px;
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .reviews {
     width: 1150px;
 
     @include tablet-padding;
+    padding-bottom: 160px;
     margin: 0 auto;
-    margin-bottom: 50px;
 
     &::before {
-      bottom: -93px;
-
       width: 1150px;
     }
   }
@@ -218,7 +228,7 @@
     width: 1050px;
 
     padding: 0;
-    padding-top: 80px;
+    padding-top: 76px;
     padding-left: 175px;
     margin: 0 auto;
   }
@@ -228,6 +238,25 @@
 
     font-size: 53px;
     line-height: 57px;
+
+    margin-left: -5px;
+  }
+
+  .reviews__item {
+    padding-left: 9px;
+  }
+
+  .reviews__item-text {
+    padding-right: 70px;
+    margin-bottom: 36px;
+  }
+
+  .reviews__author {
+    margin-left: -3px;
+  }
+
+  .reviews__toggle {
+    margin-right: 12px;
   }
 
   .reviews__toggle-button {

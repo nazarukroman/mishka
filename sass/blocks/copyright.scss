@@ -24,6 +24,8 @@
 
   vertical-align: middle;
 
+  fill: #63d1bb;
+
   margin-left: 20px;
 }
 
@@ -31,9 +33,32 @@
   .copyright {
     padding: 0;
   }
+
+  .copyright__link {
+    position: relative;
+
+    display: block;
+
+    width: 184px;
+
+    text-align: left;
+
+    padding-top: 10px;
+  }
+
+  .copyright__link-img {
+    position: absolute;
+
+    top: 6px;
+    right: 0;
+  }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-right: -7px;
+  }
+
   .copyright__link {
     &:focus,
     &:hover {

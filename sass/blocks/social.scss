@@ -22,13 +22,35 @@
 
 @media (min-width: $tablet-width) {
   .social {
+    width: 150px;
+
     border: none;
 
     padding: 0;
+    margin-left: 87px;
+    margin-top: 7px;
+  }
+
+  .social__list {
+    width: 140px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .social__item {
+    margin: 0;
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
+  .social {
+    margin-top: 10px;
+    margin-left: 93px;
+  }
+
   .social__link {
     display: inline-block;
 

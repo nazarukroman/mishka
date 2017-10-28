@@ -106,7 +106,7 @@
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .button {
     cursor: pointer;
 
@@ -125,9 +125,15 @@
 
   .button--feedback {
     margin: 0;
+    margin-left: 8px;
   }
 
   .button--order-width {
     width: 230px;
+  }
+
+  .button-reviews {
+    margin-top: 9px;
+    margin-right: -7px;
   }
 }

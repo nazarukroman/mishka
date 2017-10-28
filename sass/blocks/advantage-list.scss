@@ -26,11 +26,9 @@
   }
 }
 
- .advantage-list__item-wrapper {
-  ul {
-    @include list-reset;
-  }
- }
+.advantage-list__item-wrapper ul {
+  @include list-reset;
+}
 
 .advantage-list__flower-icon::before {
   top: 2px;
@@ -127,7 +125,7 @@
     }
   }
 
-  .advantage-list__heart-icon{
+  .advantage-list__heart-icon {
     padding-top: 81px;
     margin-bottom: 0;
 
@@ -156,5 +154,11 @@
     &::before {
       top: 29px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-list {
+    padding-left: 10px;
   }
 }

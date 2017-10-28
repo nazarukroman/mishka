@@ -156,19 +156,23 @@
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .main-nav {
     width: 1050px;
   }
 
   .main-nav__wrapper {
     width: 1050px;
+
+    margin-left: 5px;
   }
 
   .main-nav__logo {
-    width: 149px;
+    width: 148px;
 
     order: 2;
+
+    margin-left: -46px;
   }
 
   .main-nav__logo[href] {
