@@ -2,7 +2,7 @@
   @include mobile-container;
   @include mobile-padding;
   padding-top: 30px;
-  padding-bottom: 28px;
+  padding-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,6 +10,7 @@
     width: 768px;
 
     @include tablet-padding;
+    padding-top: 59px;
   }
 }
 
@@ -20,5 +21,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    padding-top: 111px;
+    padding-bottom: 0;
   }
 }

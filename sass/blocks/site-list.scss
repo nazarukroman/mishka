@@ -54,8 +54,6 @@
   .site-list__item {
     position: relative;
 
-    width: 167px;
-
     line-height: 0;
   }
 
@@ -108,6 +106,10 @@
     margin-top: 14px;
   }
 
+  .site-list--nav-block .site-list__item {
+    width: 167px;
+  }
+
   .site-list--info-block {
     width: 398px;
 
@@ -129,7 +131,6 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    min-width: 185px;
     width: auto;
     height: 89px;
 
@@ -137,6 +138,11 @@
     align-items: center;
 
     margin-top: -3px;
+  }
+
+  .site-list--nav-block .site-list__item {
+    min-width: 185px;
+    width: auto;
   }
 
   .site-list__item--search {

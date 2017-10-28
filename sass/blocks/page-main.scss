@@ -36,6 +36,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__title-wrapper {
+    position: relative;
+
+    padding-top: 94px;
+    padding-bottom: 100px;
+
+    &::before {
+      position: absolute;
+
+      content: "";
+
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      width: 768px;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+    }
+  }
+
   .page-main__title {
     width: 768px;
 
@@ -48,17 +69,31 @@
   .page-main__description {
     width: 768px;
 
+    font-size: 17px;
+    line-height: 30px;
+
     @include tablet-padding;
+    padding-top: 53px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__title-wrapper {
+    padding-bottom: 120px;
+
+    &::before {
+      width: 1150px;
+    }
+  }
+
   .page-main__title {
     width: 1150px;
 
     font-size: 53px;
     line-height: 57px;
+
+    margin-left: 17px;
   }
 
   .page-main__description {
