@@ -200,19 +200,20 @@
     width: 350px;
 
     padding: 0;
-    padding-left: 8px;
   }
 
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
 
-    margin-left: -9px;
-
     &::before {
       top: -10px;
-      left: -108px;
+      left: -107px;
     }
+  }
+
+  .contacts__table {
+    width: 350px;
   }
 
   .contacts__table tbody {
@@ -262,7 +263,6 @@
 
     margin: 0;
     margin-top: -70px;
-    margin-right: -7px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-desktop@2x.jpg");

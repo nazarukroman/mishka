@@ -55,10 +55,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .copyright {
-    margin-right: -7px;
-  }
-
   .copyright__link {
     &:focus,
     &:hover {
