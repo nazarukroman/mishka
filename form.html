@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <script src="js/picturefill.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -29,12 +30,12 @@
               <li class="site-list__item">
                 <a  class="site-list__item-link" href="catalog.html">Каталог товаров</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--border">
                 <a  class="site-list__item-link">Вязание на заказ</a>
               </li>
             </ul>
             <ul class="main-nav__list site-list site-list--info-block">
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--search">
                 <a class="site-list__item-link site-list__item-link--search" href="search.html">
                   <svg class="site-list__icon-search" width="17.6" height="17.6">
                     <use xlink:href="#icon-search"></use>
@@ -91,7 +92,7 @@
           <fieldset class="order-form__item">
             <div class="order-form__item-wrapper">
               <h2 class="order-form__title">Цвет</h2>
-              <div class="order-form__options">
+              <div class="order-form__options order-form__options--colors">
                 <div class="order-form__option order-form__option--width">
                   <input class="order-form__input visibility-hidden" type="checkbox" name="white" id="white-field" checked>
                   <label class="order-form__checkbox-button" for="white-field">Белый</label>
@@ -122,7 +123,7 @@
         </div>
         <fieldset class="order-form__item">
           <div class="order-form__item-wrapper">
-            <h2 class="order-form__title">ФИО</h2>
+            <h2 class="order-form__title order-form__title--margin">ФИО</h2>
             <div class="order-form__options">
               <div class="order-form__option order-form__option--position">
                 <label class="order-form__subtitle" for="name-field">Имя:</label>
@@ -139,10 +140,10 @@
             </div>
           </div>
         </fieldset>
-        <div class="order-form__color-wrapper">
+        <div class="order-form__color-wrapper order-form__color-wrapper--big">
           <fieldset class="order-form__item order-form__item--top">
             <div class="order-form__item-wrapper">
-              <label class="order-form__title" for="phone-field">Тел</label>
+              <label class="order-form__title order-form__title--indent" for="phone-field">Тел</label>
               <div class="order-form__option order-form__option--position">
                 <input class="order-form__text" type="text" name="phone" id="phone-field" placeholder="+7 ХХХ ХХ ХХ*">
                 <svg class="order-form__icon" width="24.829" height="24.333">
@@ -153,16 +154,17 @@
           </fieldset>
           <fieldset class="order-form__item order-form__item--top">
             <div class="order-form__item-wrapper">
-              <label class="order-form__title" for="email-field">E-mail</label>
+              <label class="order-form__title order-form__title--indent" for="email-field">E-mail</label>
               <div class="order-form__option order-form__option--position">
                 <input class="order-form__text" type="text" name="email" id="email-field" placeholder="Ваш Email*">
                 <svg class="order-form__icon" width="32" height="32">
                   <use xlink:href="#icon-mail"></use>
+                </svg>
               </div>
             </div>
           </fieldset>
         </div>
-        <fieldset class="order-form__item">
+        <fieldset class="order-form__item order-form__item--additional">
           <div class="order-form__item-wrapper">
             <h2 class="order-form__title">Доп</h2>
             <div class="order-form__option order-form__option--position">
@@ -216,13 +218,13 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано
             <svg class="copyright__link-img" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
-              <use xlink:href="logo-htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>

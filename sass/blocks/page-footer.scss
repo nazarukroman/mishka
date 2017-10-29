@@ -12,6 +12,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .page-footer__wrapper {
     width: 768px;
 
@@ -21,8 +26,6 @@
     align-items: center;
 
     @include tablet-padding;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .page-footer__logo {
@@ -30,7 +33,11 @@
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 46px;
+  }
+
   .page-footer__wrapper {
     width: 1150px;
   }

@@ -14,10 +14,6 @@
   padding-top: 54px;
   margin-bottom: 30px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &::before {
     position: absolute;
 
@@ -30,7 +26,14 @@
   }
 }
 
+.advantage-list__item-wrapper ul {
+  @include list-reset;
+}
+
 .advantage-list__flower-icon::before {
+  top: 2px;
+  left: 9px;
+
   width: 32px;
   height: 37.3px;
 
@@ -38,6 +41,8 @@
 }
 
 .advantage-list__money-icon::before {
+  top: 2px;
+
   width: 47px;
   height: 27px;
 
@@ -45,6 +50,9 @@
 }
 
 .advantage-list__heart-icon::before {
+  top: 5px;
+  left: 7px;
+
   width: 33px;
   height: 28px;
 
@@ -52,6 +60,9 @@
 }
 
 .advantage-list__ball-icon::before {
+  top: 2px;
+  left: 3px;
+
   width: 34px;
   height: 34px;
 
@@ -59,17 +70,27 @@
 }
 
 .advantage-list__rocket-icon::before {
+  top: 2px;
+  left: -5px;
+
   width: 54px;
   height: 23px;
 
   background-image: url("../img/icon-feature-rocket.svg");
 }
 
-.advantage-list__gift-icon::before {
-  width: 33px;
-  height: 33px;
+.advantage-list__gift-icon {
+  margin-bottom: 0;
 
-  background-image: url("../img/icon-feature-gift.svg");
+  &::before {
+    top: -1px;
+    left: 3px;
+
+    width: 33px;
+    height: 33px;
+
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -79,10 +100,65 @@
     flex-wrap: wrap;
   }
 
-  .advantage-list__item {
+  .advantage-list__item-wrapper {
     width: 50%;
+  }
+
+  .advantage-list__item {
+    width: auto;
 
     font-size: 20px;
     line-height: 22px;
+
+    padding-top: 73px;
+  }
+
+  .advantage-list__flower-icon::before {
+    top: 19px;
+  }
+
+  .advantage-list__money-icon {
+    padding-top: 81px;
+
+    &::before {
+      top: 28px;
+    }
+  }
+
+  .advantage-list__heart-icon {
+    padding-top: 81px;
+    margin-bottom: 0;
+
+    &::before {
+      top: 32px;
+      left: 8px;
+    }
+  }
+
+  .advantage-list__ball-icon::before {
+    top: 22px;
+  }
+
+  .advantage-list__rocket-icon {
+    padding-top: 81px;
+
+    &::before {
+      top: 31px;
+    }
+  }
+
+  .advantage-list__gift-icon {
+    padding-top: 81px;
+    margin-bottom: 0;
+
+    &::before {
+      top: 29px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-list {
+    padding-left: 10px;
   }
 }

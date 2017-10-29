@@ -78,7 +78,8 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  padding-top: 9px;
 }
 
 .modal__value input {
@@ -112,5 +113,13 @@
 
     padding-left: 109px;
     padding-right: 109px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal__value {
+    label {
+      cursor: pointer;
+    }
   }
 }

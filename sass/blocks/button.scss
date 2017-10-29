@@ -3,15 +3,17 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
 
   word-wrap: break-word;
+  word-break: break-all;
   text-transform: uppercase;
   text-decoration: none;
 
   border: 2px solid #444444;
+  border-radius: inherit;
 
   padding: 0;
+  padding-top: 13px;
 }
 
 .button--order {
@@ -72,6 +74,8 @@
   background-color: #63d1bb;
 
   border: none;
+
+  padding-top: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -82,7 +86,8 @@
   .button--order-width {
     width: 584px;
 
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 5px;
   }
 
   .button-reviews {
@@ -90,7 +95,8 @@
 
     order: 2;
 
-    margin-bottom: 50px;
+    margin-top: 2px;
+    margin-bottom: 45px;
   }
 
   .button--feedback {
@@ -104,7 +110,7 @@
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .button {
     cursor: pointer;
 
@@ -117,6 +123,7 @@
     }
 
     &:active {
+      background-color: #444444;
       color: rgba(255, 255, 255, 0.3);
     }
   }
@@ -127,5 +134,9 @@
 
   .button--order-width {
     width: 230px;
+  }
+
+  .button-reviews {
+    margin-top: 9px;
   }
 }

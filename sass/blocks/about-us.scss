@@ -23,26 +23,32 @@
     width: 768px;
 
     @include tablet-padding;
+    padding-top: 69px;
     margin: 0 auto;
   }
 
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
+
+    margin-left: -5px;
   }
 }
 
-@media (min-width: $dekstop-width) {
+@media (min-width: $desktop-width) {
   .about-us {
     width: 1050px;
 
     padding-left: 175px;
     padding-right: 175px;
+    padding-top: 59px;
     margin: 0 auto;
   }
 
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
+
+    margin-left: 3px;
   }
 }
