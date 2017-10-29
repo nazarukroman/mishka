@@ -19,22 +19,26 @@ navToggle.addEventListener("click", function() {
 if (document.getElementById("product__order") || document.getElementById("modal-block")) {
   var popup = document.querySelector(".modal__content");
   var popupBack = document.querySelector(".modal");
-  var btnOrder = document.querySelector(".button--order");
+  var btnOrder = document.querySelectorAll(".button--order");
 
-  btnOrder.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popupBack.classList.add("modal--show");
-    popup.classList.add("modal--show");
-  })
-
-  if (document.getElementById("product__order")) {
-    var cart = document.querySelector(".product__order");
-
-    cart.addEventListener("click", function(evt) {
+  for (var i = 0; i < btnOrder.length; i++) {
+    btnOrder[i].addEventListener("click", function(evt) {
       evt.preventDefault();
       popupBack.classList.add("modal--show");
       popup.classList.add("modal--show");
     })
+  };
+
+  if (document.getElementById("product__order")) {
+    var cart = document.querySelectorAll(".product__order");
+
+    for (var i = 0; i < cart.length; i++) {
+      cart[i].addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popupBack.classList.add("modal--show");
+        popup.classList.add("modal--show");
+      })
+    };
   }
 
   window.addEventListener("keydown", function(event) {
