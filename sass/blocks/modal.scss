@@ -114,3 +114,11 @@
     padding-right: 109px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .modal__value {
+    label {
+      cursor: pointer;
+    }
+  }
+}

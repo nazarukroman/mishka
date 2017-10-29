@@ -56,9 +56,13 @@
 
 @media (min-width: $desktop-width) {
   .copyright__link {
-    &:focus,
-    &:hover {
+    svg {
       fill: #63d1bb;
+    }
+
+    svg:focus,
+    svg:hover {
+      fill: #44cbba;
     }
 
     &:active {

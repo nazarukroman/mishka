@@ -79,8 +79,6 @@
   }
 
   td {
-    display: inline-block;
-
     padding: 0;
   }
 }
@@ -232,12 +230,15 @@
     padding-top: 121px;
     padding-left: 225px;
     padding-right: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 95px;
 
     &::before {
-      width: 1150px;
+      width: 1050px;
 
+      left: 50%;
       bottom: 0;
+
+      transform: translateX(-50%);
     }
   }
 
@@ -303,7 +304,7 @@
   .weekly-product__order-wrapper {
     width: 350px;
 
-    margin-top: -134px;
+    margin-top: -109px;
     margin-left: 0;
   }
 
