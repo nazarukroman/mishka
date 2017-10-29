@@ -62,21 +62,32 @@
   font-weight: 400;
   color: #444444;
 
-  margin-bottom: 23px;
-}
+  padding-bottom: 26px;
 
-.weekly-product__parameters tr {
-  display: block;
+  tr {
+    display: block;
 
-  border-bottom: 1px solid #ececec;
-  line-height: 25px;
+    border-bottom: 1px solid #ececec;
+    line-height: 25px;
 
-  padding-bottom: 3px;
-  margin-bottom: 4px;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  td {
+    display: inline-block;
+
+    padding: 0;
+  }
 }
 
 .weekly-product__field {
-  max-width: 95px;
+  width: 91px;
+  max-width: 91px;
   word-wrap: break-word;
 }
 
@@ -86,7 +97,7 @@
 }
 
 .weekly-product__photo {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .weekly-product__photo-image {
