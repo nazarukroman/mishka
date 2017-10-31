@@ -11,6 +11,7 @@ var minifycss = require("gulp-csso");
 var minifyjs = require("gulp-jsmin");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
+var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
@@ -82,6 +83,14 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("img"));
+});
+
+gulp.task("webp", function () {
+  return gulp.src("img/webp/*.jpg")
+    .pipe(webp({
+      quality: 90
+    }))
+    .pipe(gulp.dest("img/webp"));
 });
 
 gulp.task("serve", function () {
