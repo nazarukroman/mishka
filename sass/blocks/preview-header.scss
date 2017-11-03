@@ -184,9 +184,15 @@
 @media (min-width: $desktop-width) {
   .preview-header {
     padding: 0;
+
+    &::before {
+      bottom: -10px;
+    }
   }
 
   .preview-header__wrapper {
+    display: block;
+
     width: 1150px;
 
     background-image: url("../img/hero-desktop@1x.jpg");
@@ -208,10 +214,11 @@
     padding: 0;
     padding-left: 175px;
     padding-right: 175px;
+    margin-bottom: 360px;
   }
 
   .preview-header__description {
-    width: auto;
+    width: 1050px;
 
     align-items: flex-end;
 
@@ -231,9 +238,7 @@
   .preview-header__subtitle--toy {
     &:focus,
     &:hover {
-      min-height: 125px;
-
-      padding-bottom: 5px;
+      bottom: 5px;
     }
   }
 }
