@@ -49,7 +49,7 @@ img {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   body {
     min-width: 768px;
   }
